@@ -1,0 +1,171 @@
+<%- include('./partials/header.ejs') %> 
+
+    <div class="container-fluid sticky-top">
+    
+      <nav class="navbar navbar-expand-lg bg-light navbar-light ">
+        <div id="logo" class="d-block">
+          <a href="/"><img src="/images/skillero-logo.png" alt="skillero-logo" id="skillero-logo"></a>
+        </div>
+        <div class="input-group">
+          <input id="search" class="form-control" type="text" placeholder="Search anything ASAP!" autocomplete="off">
+          <div id="button" class="input-group-append">
+            <span id="bt" class="input-group-text material-icons">search</span>
+          </div>
+          
+          
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="/" class="nav-link" style="border-right: 1px solid; padding-right: 80px;">Home</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a id="login" href="#" class="nav-link btn btn-secondary" type="button" data-toggle="modal" data-target="#login-form" style="margin-left: 67.5px;">Log In</a>
+            </li>
+            <li  class="nav-item ">
+              <a id="signup" href="#" class="nav-link btn btn-primary" type="button" data-toggle="modal" data-target="#signup-form">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    </div>  
+
+  <div class="modal fade" id="login-form">
+    <div class="modal-dialog modal-dialog-centered" id="log">
+      <div class="modal-content" id="logi">
+        <div class="modal-header">
+          <h5 class="modal-title">Log In to Your Account!</h5>
+          <span id="close" type="button" class="close" data-dismiss="modal"><span>&times;</span></span>
+        </div>
+        <div class="modal-body">
+          <form action="/">
+            <div class="form-group">
+              <div class="input-group" id="dd1">
+                <span id="icon" class="material-icons input-group-prepend">mail</span>
+                <input id="login-email" type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="input-group" id="dd2">
+                <span id="icon" class="material-icons input-group-prepend">lock</span>
+                <input id="login-email" type="password" class="form-control" placeholder="Password">
+                
+              </div>
+              <a href="#" id="forget-password">Forgot Password?</a>
+              
+              
+              <button id="login-form-button" type="button" class="form-control btn btn-primary">LOG IN</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <span>Dont't have an Account?</span><a href="#" id="login-signup" data-toggle="modal" data-target="#signup-form" data-dismiss="modal">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="signup-form">
+    <div class="modal-dialog modal-dialog-centered" id="log">
+      <div class="modal-content" id="logi">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign Up and Learn ASAP!</h5>
+          <span id="close" type="button" class="close" data-dismiss="modal"><span>&times;</span></span>
+        </div>
+        <div class="modal-body">
+          <form action="/">
+            <div class="form-group">
+              <div class="input-group" id="dd1">
+                <span id="icon" class="material-icons input-group-prepend">person</span>
+                <input type="text" class="form-control" placeholder="Full Name" autocomplete="off">
+              </div>
+
+              <div class="input-group" id="dd1">
+                <span id="icon" class="material-icons input-group-prepend">mail</span>
+                <input id="login-email" type="email" class="form-control" placeholder="Email" autocomplete="off">
+              </div>
+              <div class="input-group" id="dd2">
+                <span id="icon" class="material-icons input-group-prepend">lock</span>
+                <input id="login-email" type="password" class="form-control" placeholder="Password">
+                
+              </div>
+              <div class="form-check" style="margin-bottom: 10px;">
+                <input id="terms" type="checkbox" class="form-check-input">
+                <label for="terms" class="form-check-label">
+                  I agree to <a href="#" id="terms-link"> terms and conditions</a><span style="color: red;"> *</span>
+                </label>
+              </div>
+              
+              
+              <button id="login-form-button" type="button" class="form-control btn btn-primary">SIGN UP</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <span>Already have an Account?</span><a href="#" id="login-signup" data-toggle="modal" data-target="#login-form" data-dismiss="modal">Log In</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="teaching-image">
+      <img src="/images/teach-image.jpg" alt="teaching-image">
+      <div id="register">
+        <a href="/teachers-register-form"><button class="btn btn-lg btn-danger">Register</button></a>
+      </div>
+      <div id="teaching-caption">
+        <h3>Spread your knowledge worldwide.</h3>
+      </div>
+  </div>
+
+  <div id="another">
+    
+    <i>"Education is not the filling of a pot but the lighting of a fire." <p>– W.B. Yeats</p> </i>
+  </div>
+  
+  <div id="items">
+    <div class="d-flex  justify-content-between">
+      <div>
+        <h3>Development</h3>
+      </div>
+      <div>
+        <h3>Bussiness</h3>
+      </div>
+      <div>
+        <h3>Bussiness</h3>
+      </div>
+      <div>
+        <h3>IT & Software</h3>
+      </div>
+      
+    </div>
+    <div class="d-flex  justify-content-between">
+      <div>
+        <h3>Photography</h3>
+      </div>
+      <div>
+        <h3>Health & Fitness</h3>
+      </div>
+      <div>
+        <h3>Lifestyle</h3>
+      </div>
+      <div>
+        <h3>Personal Development</h3>
+      </div>
+      
+    </div>
+  </div>
+
+  
+
+
+
+  
+   
+<%- include('./partials/footer.ejs') %> 

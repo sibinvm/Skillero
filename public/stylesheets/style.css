@@ -1,0 +1,528 @@
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.modal-open {
+    overflow: visible !important;
+}
+
+a {
+    color: #209CEE;
+}
+
+.navbar {
+    box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.75) !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+#logo {
+    width: 450px;
+}
+
+#skillero-logo {
+    width: 45%;
+    height: 45%;
+}
+
+.nav-item {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+#login {
+    color: white;
+}
+
+#login:hover {
+    color: white;
+}
+
+#signup {
+    color: white;
+    background-color: #209CEE;
+    font-weight: bold !important;
+    border-color: #0099ff;
+}
+
+#signup:hover {
+    background-color: #0083da;
+    border-color: #0083da;
+}
+
+#button {
+    color: white;
+}
+
+#button :hover {
+    color: white;
+    background-color: #209CEE;
+    cursor: pointer;
+}
+
+#bt {
+    background-color: white;
+    color: #209CEE;
+}
+
+.input-group {
+    margin-right: 30px;
+    width: 400px !important;
+}
+
+.input-group-text,
+.form-control {
+    border: transparent !important;
+}
+
+.form-control:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+#close {
+    cursor: pointer;
+}
+
+#logi {
+    padding: 15px;
+}
+
+#log {
+    width: 400px;
+}
+
+#icon {
+    color: #209CEE;
+    margin-top: 7px;
+}
+
+#dd1,
+#dd2 {
+    width: 100% !important;
+    border-bottom: 2px solid #91d2fd !important;
+    border-radius: 0 !important;
+    margin-bottom: 30px !important;
+}
+
+#dd2 {
+    margin-bottom: 10px !important;
+}
+
+#dd:focus {
+    border-bottom: 2px solid #91d2fd !important;
+    border-radius: 0 !important;
+}
+
+#login-form-button {
+    margin-top: 20px;
+    font-weight: 600px;
+}
+
+#login-signup {
+    font-weight: bold;
+}
+
+#login-signup:hover,
+#forget-password:hover,
+#terms-link:hover {
+    text-decoration: none;
+}
+
+#main img{
+    
+    width: 100%;
+}
+
+#main{
+    
+    width: 100%;
+    position: relative;
+}
+
+#main-head{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(0, 0, 0, 0.7);
+    top: 200px;
+    position: absolute;
+}
+
+#main-head h1{
+    
+    font-weight: bold;
+    font-size: 55px;
+}
+
+#abstract{
+    
+    text-align: justify;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    
+}
+
+#abstract h5{
+    text-indent: 100px;
+    line-height: 2;
+}
+
+#grey-back{
+    width: 100%;
+    position: relative;
+}
+
+#grey-back img{
+    width: 100%;
+    
+}
+
+#instructor-student {
+    top: 30px;
+    position: absolute;
+}
+
+#nothing{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    
+    height: 100px;
+}
+
+#grey-head {
+    color: white;
+    position: absolute;
+    left: 440px;
+    text-align: center;
+    top: 80px;
+}
+
+#instructor-learner-button{
+    color: white;
+    left: 630px;
+    top: 300px;
+    position: absolute;
+}
+
+#instructor-learner-button button{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+#copyright {
+    width: 100%;
+    height: 50px;
+    margin-top: 120px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    background-color: #209cee;
+}
+
+
+
+
+
+#teaching-image {
+    position: relative;
+}
+
+#teaching-image img {
+    width: 100%;
+}
+
+#teaching-caption {
+    display: block;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 100px;
+}
+
+#teaching-caption h3 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+#register {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+    text-align: center;
+    height: 40px;
+}
+
+#register button {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#another {
+    margin-top: 80px;
+    text-align: center;
+    height: 200px;
+}
+
+#another i {
+    font-size: 35px;
+}
+
+#items {
+    width: 100%;
+    height: 550px;
+}
+
+#items .d-flex {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#items .d-flex div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 100px;
+    width: 350px;
+    color: white;
+    background-image: linear-gradient( 110.9deg, rgba(44, 221, 239, 1) 1.1%, rgba(14, 191, 210, 1) 37.6%, rgba(8, 127, 140, 1) 99.2%);
+    border-radius: 100px;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+#items .d-flex div h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#left-side {
+    margin-top: 50px;
+    margin-left: -50px;
+}
+
+#right-side {
+    margin-top: 50px;
+}
+
+#right-side input {
+    border: 1px solid #91d2fd !important;
+}
+
+#right-side input:hover,
+#right-side input:focus {
+    border: 1px solid #209CEE !important;
+}
+
+#left-side-2 {
+    
+    margin-top: 50px;
+}
+
+#right-side-2 {
+    
+    margin-top: 50px;
+}
+
+#right-side-2 img {
+    
+    width: 500px;
+}
+
+#left-side-2 input {
+    border: 1px solid #91d2fd !important;
+}
+
+#left-side-2 input:hover,
+#left-side-2 input:focus {
+    border: 1px solid #209CEE !important;
+}
+
+#right-side input[type="radio"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#right-side input:checked {
+    -webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 0 1px white, 0 0 0 2px #209cee;
+    border-radius: 50%;
+    background-color: #209cee !important;
+}
+
+#right-side input[type="radio"]:focus-within:checked{
+    display: none;
+}
+
+
+[type="date"] {
+    background: url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+   
+  }
+
+  [type="number"]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+#doc{
+    color: white;
+    padding-top: 5px;
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #209cee;
+    border-radius: 10px;
+    background-color: #209cee !important;
+}
+#doc:hover{
+    cursor: pointer;
+    background-color: #0083da !important;
+    
+}
+input[type="file"]{
+    display: none;
+   
+}
+#choose{
+    margin-left: 8px;
+}
+
+#time {
+    border: 1px solid #91d2fd !important;
+    
+}
+#time:focus, #time:hover{
+    box-shadow: none !important;
+    border: 1px solid #209CEE !important;
+}
+
+#submit {
+    margin-left: 50%;
+    
+}
+  
+  
+  
+
+/* learners dashboard */
+
+
+
+.card {
+    height: 350px;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.card-img-top{
+    
+    height: 200px;
+}
+.card-body{
+    height: 100px;
+}
+
+
+/* online-payment.ejs */
+
+#payment{
+    height: 371px;
+}
+
+#payment .col-sm-8{
+    width: 100%;
+    height: 350px;
+}
+
+#payment .col-sm-4{
+    height: 350px;
+}
+
+#payment .col-sm-8 #course-img{
+    float: left;
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+}
+
+#payment .col-sm-8 #course-img #course-image {
+    
+    width: 250px;
+    height: 250px;
+}
+
+#payment-head{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#course #course-heading{
+    float: left;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+#summary{
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    margin-top: 60px;
+}
+
+#summary h3{
+    margin-left: -190px;
+}
+
+#summary h5{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+#summary #total-price {
+    font-weight: bold;
+    float: left;
+    margin-left: 105px;
+    padding-top: 23px;
+    font-size: 25px;
+}
+ 
+#summary button{
+    padding-left: 100px;
+    padding-right: 100px;
+}

@@ -1,0 +1,173 @@
+<%- include('./partials/header.ejs') %> 
+    
+  <div class="container-fluid sticky-top">
+      <nav class="navbar navbar-expand-lg bg-light navbar-light ">
+        <div id="logo" class="d-block">
+          <a href="/"><img src="/images/skillero-logo.png" alt="skillero-logo" id="skillero-logo"></a>
+        </div>
+        <div class="input-group">
+          <input id="search" class="form-control" type="text" placeholder="Search anything ASAP!" autocomplete="off">
+          <div id="button" class="input-group-append">
+            <span id="bt" class="input-group-text material-icons">search</span>
+          </div>
+          
+          
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="/teaching" class="nav-link">You Can Teach</a>
+            </li>
+            <li class="nav-item">
+              <a id="login" href="#" class="nav-link btn btn-secondary" type="button" data-toggle="modal" data-target="#login-form">Log In</a>
+            </li>
+            <li  class="nav-item ">
+              <a id="signup" href="#" class="nav-link btn btn-primary" type="button" data-toggle="modal" data-target="#signup-form">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+  </div>  
+
+  <div class="modal fade" id="login-form">
+    <div class="modal-dialog modal-dialog-centered" id="log">
+      <div class="modal-content" id="logi">
+        <div class="modal-header">
+          <h5 class="modal-title">Log In to Your Account!</h5>
+          <span id="close" type="button" class="close" data-dismiss="modal"><span>&times;</span></span>
+        </div>
+        <div class="modal-body">
+          
+          <form action="/">
+            
+            <div class="form-group">
+              <div class="input-group" id="dd1">
+                <span id="icon" class="material-icons input-group-prepend">mail</span>
+                <input id="login-email" type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="input-group" id="dd2">
+                <span id="icon" class="material-icons input-group-prepend">lock</span>
+                <input id="login-email" type="password" class="form-control" placeholder="Password">
+                
+              </div>
+              <a href="#" id="forget-password">Forgot Password?</a>
+              
+              
+              <a href="/learners-page" id="login-form-button" type="button" class="form-control btn btn-primary">LOG IN</a>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <span>Dont't have an Account?</span><a href="#" id="login-signup" data-toggle="modal" data-target="#signup-form" data-dismiss="modal">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="signup-form">
+    <div class="modal-dialog modal-dialog-centered" id="log">
+      <div class="modal-content" id="logi">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign Up and Learn ASAP!</h5>
+          <span id="close" type="button" class="close" data-dismiss="modal"><span>&times;</span></span>
+        </div>
+        <div class="modal-body">
+          <h4 id="exist"><%= text %> </h4>
+          <form action="/users/success" method="post" id="signupform">
+            <div class="form-group">
+              <div class="input-group" id="dd1">
+                <span id="icon" class="material-icons input-group-prepend">person</span>
+                <input type="text" class="form-control" placeholder="Full Name" autocomplete="off" name="fullname">
+              </div>
+
+              <div class="input-group" id="dd1">
+                <span id="icon" class="material-icons input-group-prepend">mail</span>
+                <input id="login-email" type="email" class="form-control" placeholder="Email" autocomplete="off" name="email">
+              </div>
+              <div class="input-group" id="dd2">
+                <span id="icon" class="material-icons input-group-prepend">lock</span>
+                <input id="login-email" type="password" class="form-control" placeholder="Password" name="password">
+                
+              </div>
+              <div class="form-check" style="margin-bottom: 10px;">
+                <input id="terms" type="checkbox" class="form-check-input">
+                <label for="terms" class="form-check-label">
+                  I agree to <a href="#" id="terms-link"> terms and conditions</a><span style="color: red;"> *</span>
+                </label>
+              </div>
+              
+              
+              <button id="login-form-button" type="submit" class="form-control btn btn-primary" onclick="clikk()">SIGN UP</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <span>Already have an Account?</span><a href="#" id="login-signup" data-toggle="modal" data-target="#login-form" data-dismiss="modal">Log In</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="/images/main.jpg" alt="">
+    <div id="main-head">
+      <h1>Welcome To Skillero</h1><br>
+      <h2>Skill Share Platform</h2>
+    </div>
+  </div>
+
+  <div id="abstract">
+    <h5>As each of us navigates the impact of COVID-19 on our lives, this is the time to remain as
+      passionate as ever about helping others learn, grow, and connect with learners and educators
+      around the world (let it be art,craft, programming or any other skill you are rich in). Through this
+      online portal you can learn new things and improve your skills during these days! Grow and
+      build yourself with this opportunity.
+    </h5>
+  </div>
+
+  <div id="grey-back">
+    <img src="/images/grey-background.jpg" alt="">
+    <div id="instructor-student">
+      <img src="/images/instructor&student.png" alt="">
+    </div>
+    <div id="grey-head">
+      <h1>This is a platform where instructors and learners <h1>are together</h1></h1>
+    </div>
+    <div id="instructor-learner-button">
+      <h3>Become a <a href="/teachers-register-form"><button type="button" class="btn btn-lg btn-danger">Instructor</button></a>   or  <button type="button" class="btn btn-lg btn-primary" data-target="#signup-form" data-toggle="modal">Learner</button></h3>
+    </div>
+    <div id="nothing">
+
+    </div>
+  </div>
+
+  
+  <div id="copyright">
+    
+      <p>Copyright © 2020 Skillero, All Rights Reserved.</p>
+    
+  </div>
+   
+  <script>
+    
+    
+    
+    
+    
+    
+    
+    
+  </script>
+
+<%- include('./partials/footer.ejs') %> 
+

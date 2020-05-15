@@ -1,0 +1,349 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="container-fluid sticky-top">
+
+  <nav class="navbar navbar-expand-lg bg-light navbar-light ">
+    <div id="logo" class="d-block">
+      <a href="/"><img src="/images/skillero-logo.png" alt="skillero-logo" id="skillero-logo"></a>
+    </div>
+    <div class="input-group">
+      <input id="search" class="form-control" type="text" placeholder="Search anything ASAP!" autocomplete="off">
+      <div id="button" class="input-group-append">
+        <span id="bt" class="input-group-text material-icons">search</span>
+      </div>
+
+
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-content">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="/" class="nav-link" style="border-right: 1px solid; padding-right: 80px;">Home</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a id="login" href="#" class="nav-link btn btn-secondary" type="button" data-toggle="modal"
+            data-target="#login-form" style="margin-left: 67.5px;">Log In</a>
+        </li>
+        <li class="nav-item ">
+          <a id="signup" href="#" class="nav-link btn btn-primary" type="button" data-toggle="modal"
+            data-target="#signup-form">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</div>
+
+<div class="modal fade" id="login-form">
+  <div class="modal-dialog modal-dialog-centered" id="log">
+    <div class="modal-content" id="logi">
+      <div class="modal-header">
+        <h5 class="modal-title">Log In to Your Account!</h5>
+        <span id="close" type="button" class="close" data-dismiss="modal"><span>&times;</span></span>
+      </div>
+      <div class="modal-body">
+        <form action="/">
+          <div class="form-group">
+            <div class="input-group" id="dd1">
+              <span id="icon" class="material-icons input-group-prepend">mail</span>
+              <input id="login-email" type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="input-group" id="dd2">
+              <span id="icon" class="material-icons input-group-prepend">lock</span>
+              <input id="login-email" type="password" class="form-control" placeholder="Password">
+
+            </div>
+            <a href="#" id="forget-password">Forgot Password?</a>
+
+
+            <button id="login-form-button" type="button" class="form-control btn btn-primary">LOG IN</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <span>Dont't have an Account?</span><a href="#" id="login-signup" data-toggle="modal" data-target="#signup-form"
+          data-dismiss="modal">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="signup-form">
+  <div class="modal-dialog modal-dialog-centered" id="log">
+    <div class="modal-content" id="logi">
+      <div class="modal-header">
+        <h5 class="modal-title">Sign Up and Learn ASAP!</h5>
+        <span id="close" type="button" class="close" data-dismiss="modal"><span>&times;</span></span>
+      </div>
+      <div class="modal-body">
+        <form action="/">
+          <div class="form-group">
+            <div class="input-group" id="dd1">
+              <span id="icon" class="material-icons input-group-prepend">person</span>
+              <input type="text" class="form-control" placeholder="Full Name" autocomplete="off">
+            </div>
+
+            <div class="input-group" id="dd1">
+              <span id="icon" class="material-icons input-group-prepend">mail</span>
+              <input id="login-email" type="email" class="form-control" placeholder="Email" autocomplete="off">
+            </div>
+            <div class="input-group" id="dd2">
+              <span id="icon" class="material-icons input-group-prepend">lock</span>
+              <input id="login-email" type="password" class="form-control" placeholder="Password">
+
+            </div>
+            <div class="form-check" style="margin-bottom: 10px;">
+              <input id="terms" type="checkbox" class="form-check-input">
+              <label for="terms" class="form-check-label">
+                I agree to <a href="#" id="terms-link"> terms and conditions</a><span style="color: red;"> *</span>
+              </label>
+            </div>
+
+
+            <button id="login-form-button" type="button" class="form-control btn btn-primary">SIGN UP</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <span>Already have an Account?</span><a href="#" id="login-signup" data-toggle="modal" data-target="#login-form"
+          data-dismiss="modal">Log In</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+      <div id="left-side">
+        <img src="/images/teacher.png" alt="teacher">
+      </div>
+    </div>
+
+    <div class="col-sm-7">
+      <div id="right-side">
+        <form action="">
+
+          <h1>Registration Form</h1><br>
+          <div class="form-group row">
+            <label for="fullname" class="col-sm-4 col-form-label">Fullname </label>
+            <div class="col-sm-4">
+              <input id="fullname" class="form-control" type="text" placeholder="First Name">
+            </div>
+            <div class="col-sm-4">
+              <input id="fullname" class="form-control" type="text" placeholder="Last Name">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="gender" class="col-sm-4 col-form-label">Gender</label>
+            <div class="col-sm-8 pt-2">
+              <div class="form-check form-check-inline">
+                <input type="radio" id="male" class="form-check-input" name="gender" value="male">
+                <label for="male" class="form-check-label">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" id="female" class="form-check-input" name="gender" value="female">
+                <label for="female" class="form-check-label">Female</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="dob" class="col-sm-4 col-form-label">Date of Birth</label>
+            <div class="col-sm-8">
+              <input type="text" id="dob" class="form-control" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="MM/DD/YYYY">
+            </div>
+          </div>
+
+          <div class="from-group row mb-3">
+            <label for="email" class="col-sm-4 col-form-label">Email</label>
+            <div class="col-sm-8">
+              <input type="email" id="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="phone" class="col-sm-4 col-form-label">Phone</label>
+            <div class="col-8">
+              <input type="number" id="phone" class="form-control" placeholder="Phone Number">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="lang" class="col-sm-4 col-form-label">Languages Known</label>
+            <div class="col-8">
+              <input type="text" id="lang" class="form-control" placeholder="English, Hindi . . .">
+            </div>
+          </div>
+          <br>
+
+          <h3>Educational Details</h3><br>
+
+          <div class="form-group row">
+            <label for="qualification" class="col-sm-4 col-form-label">Highest Qualification</label>
+            <div class="col-8">
+              <input type="text" id="qualification" class="form-control" placeholder="Qualification">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="institute" class="col-sm-4 col-form-label">Institute</label>
+            <div class="col-8">
+              <input type="text" id="institute" class="form-control" placeholder="Name of the Institute">
+            </div>
+          </div>
+
+          
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-7">
+      <div id="left-side-2">
+        <form action="">
+          <h3>Skills</h3><br>
+
+          <div class="form-group row">
+            <label for="skill" class="col-sm-4 col-form-label">Skills</label>
+            <div class="col-8">
+              <input type="text" id="skill" class="form-control" placeholder="Photoshop, Programming . . . ">
+            </div>
+          </div>
+          <br>
+
+          <h3>Experience</h3><br>
+
+          <div class="form-group row">
+            <label for="experience" class="col-sm-4 col-form-label">Experience</label>
+            <div class="col-8">
+              <input type="number" id="experience" class="form-control" placeholder="Months">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="oraganisation" class="col-sm-4 col-form-label">Organisation</label>
+            <div class="col-8">
+              <input type="text" id="organisation" class="form-control" placeholder="Organisation">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="designation" class="col-sm-4 col-form-label">Designation</label>
+            <div class="col-8">
+              <input type="text" id="designation" class="form-control" placeholder="Designation">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label">Upload Documents</label>
+            <div class="col-8">
+              <label for="documents" id="doc">
+                <span>Upload Files</span>
+                <input type="file" name="" id="documents" class="form-control">
+              </label>
+              <span id="choose">No file chosen...</span>
+            </div>
+          </div><br>
+
+          <script>
+            const file = document.querySelector("#doc input[type=file]");
+            file.onchange = () => {
+              if(file.files.length > 0) {
+                const filename = document.querySelector("#choose");
+              filename.textContent = file.files[0].name;
+              }
+              
+            }
+          </script>
+
+          <h3>Other Details</h3><br>
+
+          <div class="form-group row">
+            <label for="charge" class="col-sm-4 col-form-label">Charges per hour</label>
+            <div class="col-8">
+              <input type="number" id="charge" class="form-control" placeholder="&#x20B9; Rupees">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="time" class="col-sm-4 col-form-label">Available Timings</label>
+            <div class="col-8">
+              <select name="Select Time" id="time" class="custom-select">
+                <option value="" selected>Select Time</option>
+                <option value="">9 AM - 11 AM</option>
+                <option value="">10 AM - 12 PM</option>
+                <option value="">11 AM - 1 PM</option>
+                <option value="">12 PM - 2 PM</option>
+                <option value="">1 PM - 3 PM</option>
+                <option value="">2 PM - 4 PM</option>
+                <option value="">3 PM - 5 PM</option>
+                <option value="">4 PM - 6 PM</option>
+                <option value="">5 PM - 7 PM</option>
+                <option value="">7 PM - 9 PM</option>
+                <option value="">9 PM - 11 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="form-group row">
+
+            <div class="col-8">
+
+            </div>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" name="terms" id="term" class="custom-control-input">
+            <label for="term" class="custom-control-label">The information provided in this form is correct to the best of my knowledge.</label>
+          </div>
+          <br>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" name="conditions" id="condition" class="custom-control-input">
+            <label for="condition" class="custom-control-label">In case of any information furnished by me is found to be incorrect, the Skillero has the right to take any
+              action it deems fit.</label>
+          </div>
+          <br>
+
+          
+          <div id="submit">
+            <a href="#"><button type="submit" class="btn btn-primary">Submit</button></a>
+          </div>
+          
+
+          
+
+
+          <p></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-sm-5">
+      <div id="right-side-2">
+        <img src="/images/teacher-2.png" alt="teacher">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<%- include('./partials/footer.ejs') %>
